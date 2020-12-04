@@ -1,9 +1,10 @@
 
 
-function LocationInfoBox({info}) {
-   
+function LocationInfoBox({info, closeClick}) {
+
     return (
         <div className="location-info">
+            <div className="closeModal" onClick={closeClick} >x</div>
             <h2>Event Location Info</h2>
             <ul>
                 <li>

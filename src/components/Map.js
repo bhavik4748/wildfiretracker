@@ -13,17 +13,20 @@ export const Map = ({ eventData, center, zoom }) => {
         return null
     })
 
+    const closeClick = () =>{
+        setLocationInfo(null);
+    }
 
     return (
         <div className="map">
             <GoogleMapReact
-                bootstrapURLKeys={{ key: 'add key' }}
+                bootstrapURLKeys={{ key: 'your key' }}
                 defaultCenter={center}
                 defaultZoom={zoom}
             >
                 {markers}
             </GoogleMapReact>
-            {locationInfo && <LocationInfoBox info={locationInfo} />}
+            {locationInfo && <LocationInfoBox info={locationInfo} closeClick={closeClick} />}
         </div>
     )
 }
