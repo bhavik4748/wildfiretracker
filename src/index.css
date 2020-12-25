@@ -72,6 +72,11 @@ body {
   color: red;
 }
 
+.location-storm-icon {
+  font-size: 2rem;
+  color: gray;
+}
+
 .loading {
   display: flex;
   flex-direction: column;

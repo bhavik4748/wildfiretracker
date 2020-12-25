@@ -1,6 +1,6 @@
 
 
-function LocationInfoBox({info, closeClick}) {
+function LocationInfoBox({ info, closeClick }) {
 
     return (
         <div className="location-info">
@@ -9,7 +9,12 @@ function LocationInfoBox({info, closeClick}) {
             <ul>
                 <li>
                     ID: <strong>{info.id}</strong>
+                </li>
+                <li>
                     TITLE: <strong>{info.title}</strong>
+                </li>
+                <li>
+                    DATE: <strong>{info.date}</strong>
                 </li>
             </ul>
         </div>
